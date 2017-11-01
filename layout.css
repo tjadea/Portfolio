@@ -12,10 +12,15 @@ background-color:#1b1e21;
 }
 
 #navbar {
+  list-style-type: none;
   min-width:100%;
   background:#FFF; 
   margin: 0;
   padding: 0;
+}
+
+li {
+  display: inline;
 }
 
 #navbar a {
