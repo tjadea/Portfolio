@@ -7,10 +7,16 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <!-- script for Nav bar and below, CSS ref to file -->
   <link rel="stylesheet" type="text/css" href="layout.css" />
-</head>
+<script>
+    jQuery(document).ready(function($){
+        $("#GA").load("GA.html");
+    });
+</script>
+  </head>
 
 <body>
   <header>
+    <div id="GA"></div>
     <h1>Tester</h1>
 <!--Navigation bar-- learn this and altern. as from stackoverflow -->
  <div id="navbar"></div>
