@@ -1,2 +1,3 @@
 #Alternate default index page
 DirectoryIndex index.html
+AllowOverride Options
