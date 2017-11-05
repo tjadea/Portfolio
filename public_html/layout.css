@@ -1,0 +1,39 @@
+body {
+background-color:#1b1e21;
+  color:#FFF;
+}
+
+#navbar a:hover {
+  color:#33FF33; 
+}
+
+#navbar a:active {
+  background-color:#1b1e21;
+}
+
+#navbar {
+  list-style-type: none;
+  min-width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+#navbar a {
+  font-family: sans-serif;
+  color:#3157ae;
+  text-decoration: none;
+}
+
+footer {
+  color:#000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:#FFF; 
+  min-width: 100%;
+}
