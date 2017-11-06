@@ -1,6 +1,14 @@
 body {
   background-color:#1b1e21;
   color:#FFF;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+section {
+    padding-top: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #navbar a.navbar-brand {
@@ -33,5 +41,26 @@ li {
 }
 
 footer {
-  
+  text-align: right;
+  font-size: 0.9em;
+}
+
+.aboutme {
+  background-color:#333;
+}
+
+.portfolio {
+  background-color:#545;
+}
+
+.contact {
+  background-color:#666;
+}
+
+.form-control {
+  width: 50%;
+}
+
+#contactform {
+   padding-left: 35%;
 }
