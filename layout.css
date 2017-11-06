@@ -1,10 +1,14 @@
 body {
-background-color:#1b1e21;
+  background-color:#1b1e21;
   color:#FFF;
 }
 
+#navbar a.navbar-brand {
+  font-size: 3em;
+  font-family: serif;
+}
 #navbar a:hover {
-  color:#33FF33; 
+  color:#2291d7; 
 }
 
 #navbar a:active {
@@ -16,6 +20,7 @@ background-color:#1b1e21;
   min-width:100%;
   margin: 0;
   padding: 0;
+  color: #FFF;
 }
 
 li {
@@ -23,17 +28,10 @@ li {
 }
 
 #navbar a {
-  font-family: sans-serif;
-  color:#3157ae;
+  color:#FFF;
   text-decoration: none;
 }
 
 footer {
-  color:#000;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background:#FFF; 
-  min-width: 100%;
+  
 }
