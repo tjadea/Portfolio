@@ -15,14 +15,23 @@
 
   <header>
     <div id="GA"></div>
-<!--Navigation bar-- learn this and altern. as from stackoverflow -->
- <div id="navbar"></div>
-<script>
-$(function(){
-  $("#navbar").load("nav.html");
-});
-</script>
-<!--end of Navigation bar-->
+ <div id="navbar">
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar header pull-left">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="glyphicon glyphicon-align-right"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Tamara Argent</a>
+      </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+  <ul class="nav navbar-nav pull-right">
+    <li><a href="#aboutme"><span class="glyphicon glyphicon-heart-empty"></span> About Me</a></li>
+      <li><a href="#portfolio"><span class="glyphicon glyphicon-inbox"></span> Portfolio</a></li>
+      <li><a href="#contact"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+  </ul>
+  </div>
+ </nav>
+ </div>
   </header>
   <body>
 
@@ -33,7 +42,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper nulla ut
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas fringilla hendrerit sem id tristique. In elementum tempor suscipit. Nullam elit ligula, molestie eget gravida ac, tempor ac libero. Nunc sed quam vehicula diam sollicitudin tempus sed ac turpis. Maecenas nec justo vitae odio aliquet vehicula. Sed pellentesque purus at convallis ornare. Integer vehicula scelerisque placerat. Donec pharetra facilisis condimentum. Aliquam elementum varius tristique. Proin quis quam enim. Pellentesque purus nunc, fringilla sed malesuada et, pretium eget quam.</section>
   
     
-    <section class="portfolio" id="portfolio"><h3>Portfolio</h3><br>Pellentesque sit amet risus ornare, tincidunt leo eget, consequat velit. Proin et felis metus. Proin molestie vitae tortor eget convallis. Curabitur nec dui finibus, suscipit diam ac, rhoncus turpis. Etiam a justo magna. Duis elementum felis vel dui tristique feugiat. Integer volutpat magna sed erat venenatis, eget lobortis risus condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus purus elit, vestibulum auctor quam quis, venenatis ultricies nibh. Vivamus nec ipsum lobortis, imperdiet lectus eu, lacinia magna. Aliquam in scelerisque elit. Phasellus vitae hendrerit elit, nec convallis elit. Vestibulum tellus neque, iaculis lacinia efficitur sed, accumsan eu tellus. Sed in magna lacinia, eleifend libero sagittis, iaculis magna. Suspendisse id posuere felis. Quisque vel tortor et magna cursus efficitur accumsan at libero. Maecenas eu tincidunt sem. Donec luctus tellus eros, et tempor quam ultricies id. In vel euismod augue. Quisque eget risus eros. Sed pharetra pulvinar lectus, id congue odio mattis sed. Proin molestie, lacus nec vestibulum tincidunt, dolor arcu iaculis arcu, eget cursus ante nisi quis magna. Suspendisse rutrum ante in eros vehicula, non hendrerit leo accumsan. Praesent pellentesque convallis sem quis pharetra. Mauris rutrum metus eget laoreet finibus. Nunc felis lacus, porta a volutpat in, consectetur eget felis. Praesent nec lacinia tellus. Curabitur varius, tellus blandit vehicula hendrerit, lorem nibh eleifend purus, et ornare erat augue vitae nunc.
+  <section class="portfolio" id="portfolio"><h3>Portfolio</h3><br>Pellentesque sit amet risus ornare, tincidunt leo eget, consequat velit. Proin et felis metus. Proin molestie vitae tortor eget convallis. Curabitur nec dui finibus, suscipit diam ac, rhoncus turpis. Etiam a justo magna. Duis elementum felis vel dui tristique feugiat. Integer volutpat magna sed erat venenatis, eget lobortis risus condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus purus elit, vestibulum auctor quam quis, venenatis ultricies nibh. Vivamus nec ipsum lobortis, imperdiet lectus eu, lacinia magna. Aliquam in scelerisque elit. Phasellus vitae hendrerit elit, nec convallis elit. Vestibulum tellus neque, iaculis lacinia efficitur sed, accumsan eu tellus. Sed in magna lacinia, eleifend libero sagittis, iaculis magna. Suspendisse id posuere felis. Quisque vel tortor et magna cursus efficitur accumsan at libero. Maecenas eu tincidunt sem. Donec luctus tellus eros, et tempor quam ultricies id. In vel euismod augue. Quisque eget risus eros. Sed pharetra pulvinar lectus, id congue odio mattis sed. Proin molestie, lacus nec vestibulum tincidunt, dolor arcu iaculis arcu, eget cursus ante nisi quis magna. Suspendisse rutrum ante in eros vehicula, non hendrerit leo accumsan. Praesent pellentesque convallis sem quis pharetra. Mauris rutrum metus eget laoreet finibus. Nunc felis lacus, porta a volutpat in, consectetur eget felis. Praesent nec lacinia tellus. Curabitur varius, tellus blandit vehicula hendrerit, lorem nibh eleifend purus, et ornare erat augue vitae nunc.
 
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas fringilla hendrerit sem id tristique. In elementum tempor suscipit. Nullam elit ligula, molestie eget gravida ac, tempor ac libero. Nunc sed quam vehicula diam sollicitudin tempus sed ac turpis. Maecenas nec justo vitae odio aliquet vehicula. Sed pellentesque purus at convallis ornare. Integer vehicula scelerisque placerat. Donec pharetra facilisis condimentum. Aliquam elementum varius tristique. Proin quis quam enim. Pellentesque purus nunc, fringilla sed malesuada et, pretium eget quam.</section>
   
@@ -41,7 +50,7 @@ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
     <section class="contact" id="contact"><h3>Contact Me</h3><br>In elementum tempor suscipit. Nullam elit ligula, molestie eget gravida ac, tempor ac libero. Nunc sed quam vehicula diam sollicitudin tempus sed ac turpis. Maecenas nec justo vitae odio aliquet vehicula. Sed pellentesque purus at convallis ornare. Integer vehicula scelerisque placerat. Donec pharetra facilisis condimentum. Aliquam elementum varius tristique. Proin quis quam enim. Pellentesque purus nunc, fringilla sed malesuada et, pretium eget quam.
       <br><br><br>
       
-    <div class="contactform" id="contactform">      
+    <div class="contactform" id="contactform">
       <form>
       <div class="form-group">
        <label for="inputnamelabel">Name</label>
@@ -49,7 +58,7 @@ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
        </div>
        <div class="form-group">
         <label for="inputemaillabel">E-Mail:</label>
-        <input type="email" class="form-control" id="inputemaillabel" placeholder="j.smith@email.co.uk">  
+        <input type="email" class="form-control" id="inputemaillabel" placeholder="j.smith@email.co.uk">
        </div>
        <div class="form-group">
         <label for="inputtextlabel">Message:</label>
