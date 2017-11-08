@@ -1,19 +1,35 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Lora|Source+Sans+Pro');
+/* General formatting for body anf section content */
+html, body {
+  width: 100%;
+}
+
 body {
   background-color:#1b1e21;
   color:#FFF;
   padding-top: 70px;
   padding-bottom: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
 }
 
 section {
-    padding-top: 70px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+.wrapper {
+  height: 100%;
+  overflow: auto;
+
+}
+
+
+/* specific navbar formatting including hover styling, etc. Also includes menu styling. */
 #navbar a.navbar-brand {
   font-size: 3em;
-  font-family: serif;
+  font-family: 'Lora', serif;
 }
 #navbar a:hover {
   color:#2291d7; 
@@ -26,26 +42,37 @@ section {
 #navbar {
   list-style-type: none;
   min-width:100%;
-  margin: 0;
-  padding: 0;
   color: #FFF;
+}
+
+.navbar {
+  margin-bottom: 5px;
 }
 
 li {
   display: inline;
 }
 
-#navbar a {
+a, #navbar a {
   color:#FFF;
   text-decoration: none;
 }
 
-footer {
-  text-align: right;
-  font-size: 0.9em;
+p {
+  font-size: 1.3em;
 }
 
-.aboutme {
+footer {
+  text-align: right;
+  font-size: 1em;
+}
+
+.fa-linkedin-square, .fa-linkedin-square:hover {
+  font-size: 1.6em;
+  text-decoration: none;
+}
+
+/* .aboutme {
   background-color:#333;
 }
 
@@ -55,12 +82,58 @@ footer {
 
 .contact {
   background-color:#666;
-}
+} */
 
+/* Contact form specifications and any styling if applicable */
 .form-control {
   width: 50%;
 }
 
 #contactform {
-   padding-left: 35%;
+  padding-left: 30%;
+  text-align: left;
+}
+/* text-extend for 'more information - make styling more appropriate */
+span.AI:after{
+    content: '.A.I. in Japan';
+}
+span.AI:hover:after{
+    content: 'Artifical Intelligence in Japan';
+}
+  
+span.Degree:after{
+    content: 'Computer Security and Forensics';
+}
+span.Degree:hover:after{
+    content: 'Bachelor of Science (Hons)';
+}
+
+/*work regarding horizontal rules */
+
+h3 {
+  overflow: hidden;
+  text-align: center;
+  font-size: 2em;
+}
+
+h3:before, h3:after {
+  background-color: #134983;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+/* add Javascript for the 'onclick' effect */
+.glyphicon:hover {
+  color:#134983;
 }
