@@ -103,7 +103,9 @@ nav ul, .footer ul {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    flex-flow: row wrap;
     padding: 2px;
+    position: relative;
 }
 
 .portfolio-content > div {
@@ -117,6 +119,7 @@ nav ul, .footer ul {
 .element {
   overflow: hidden;
   position: relative;
+  background-color: #E8E8E8;
 }
 
 .inner {
@@ -204,6 +207,22 @@ a:hover {
 	#info h1 {
 	    font-size: 2em;
 	}
+
+  .portfolio-content > div {
+    height: 100px;
+  }
+
+  .element:hover .inner {
+    top: 0px;
+  }
+
+  .element img {
+    float: left;
+  }
+
+  .inner h3, .inner p {
+    font-size: 1em;
+  }
 
 	.footer {
 		display: block;
