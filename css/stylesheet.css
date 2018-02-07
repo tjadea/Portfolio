@@ -1,6 +1,9 @@
+/* Import URLs for Google fonts */
  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:300,300i');
 /*@import url('https://fonts.googleapis.com/css?family=Barlow:500i|Roboto+Condensed|Spectral+SC');*/
 /*Add 'async' to end of script JS tag at top of page*/
+
+/* Global rules */
  html {
 	height: 100%;
 	box-sizing: border-box;
@@ -18,7 +21,8 @@ img {
 }
 
 body {
-	position: relative;
+    position: relative;
+    margin: auto;
 	height: 100%;
 	width: 100%;
     background: #FFF;
@@ -45,9 +49,13 @@ p, .btn-ask {
     font-size: 1em;
 }
 
+/* Container rules */
+
 .container-fluid {
     padding: 0 0;
 }
+
+/* Navigation rules */
 
 .navbar-default {
     border-color: transparent;
@@ -98,6 +106,7 @@ nav ul, .footer ul {
 	list-style-image: none;
 }
 
+/* Portfolio Rules */
 
 .portfolio-content {
     display: -ms-flexbox;
@@ -150,6 +159,8 @@ nav ul, .footer ul {
   top: 200px;
 }
 
+/* Footer rules */
+
 .footer {
 	left: 0;
 	right: 0;
@@ -182,6 +193,8 @@ nav ul, .footer ul {
 	color: #FFF;
 }
 
+/* Anchor Rules */
+
 a {
 	font-style: normal;
 	text-decoration: none !important;
@@ -198,6 +211,8 @@ a {
 a:hover {
 	color: #f5f5f5;
 }
+
+/* Responsive Design Rules */
 
 @media only screen and (max-width: 600px) {
     #info, #info h1 {
