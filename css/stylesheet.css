@@ -83,16 +83,7 @@ p, .btn-ask {
 
 #info .fa-arrow-down {
     color: #FFF;
-    font-size: 4em;
-    -webkit-transition: color 300ms;
-    -moz-transition:    color 300ms;
-    -ms-transition:     color 300ms;
-    -o-transition:      color 300ms;
-    transition:         color 300ms;
-}
-
-#info .fa-arrow-down:hover {
-    color: #6787ab;
+    font-size: 3em;
 }
 
 .btn-ask {

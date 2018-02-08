@@ -4,13 +4,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Junior Front End Web Developer" />
+	<meta name="keywords" content="front-end developer, junior front-end, Haverhill, Suffolk, Tamara Argent Haverhill," />
+	<meta name="author" content="Tamara Argent">
 	<title>Tamara Argent | Portfolio</title>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/font-awesome/css/fontawesome-all.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/stylesheet.min.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
 	<header>
@@ -39,7 +42,7 @@
 	<section id="info">
 		<h1>Hi, I'm Tamara
 		<br>I am a Junior Front End Web Developer based in Haverhill, Suffolk</h1>
-		<br><a href="#details"><i class="fas fa-arrow-down"></i></a>
+		<br><i class="fas fa-arrow-down"></i>
 	</section>
 	<section id="details">
 	    <h2>About Me</h2><br>
@@ -94,5 +97,8 @@
 		</ul>
 	</footer>
 </div>
+<script async>
+	setInterval(function() {$('.fa-arrow-down').animate({opacity:1}, 1000).animate({opacity:0}, 1000);}, 2000);
+</script>
 </body>
 </html>
