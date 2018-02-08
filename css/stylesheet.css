@@ -81,7 +81,7 @@ p, .btn-ask {
     line-height: 200%;
 }
 
-#info .glyphicon {
+#info .fa-arrow-down {
     color: #FFF;
     font-size: 4em;
     -webkit-transition: color 300ms;
@@ -91,7 +91,7 @@ p, .btn-ask {
     transition:         color 300ms;
 }
 
-#info .glyphicon:hover {
+#info .fa-arrow-down:hover {
     color: #6787ab;
 }
 
