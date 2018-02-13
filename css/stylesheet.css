@@ -11,7 +11,8 @@
 
 html {
 	height: 100%;
-	box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1rem;
 }
 
 button, input, select, textarea {
@@ -81,30 +82,33 @@ p, .btn-ask {
 
 /* Navigation rules */
 
-.navbar-default {
+.bg-dark{
     border-color: transparent;
     margin-bottom: 0 !important;
     font-weight: bold;
 }
 
-.navbar-default .navbar-nav>li>a {
+#mainNavbar ul > li > a {
     color: #d8dbe0;
     font-size: 1rem;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
+#mainNavbar ul > li > a:hover {
     background-color: rgba(0, 0, 0, 0.31);
     color: #f1eaea;
 }
 
-#info, .navbar-default, .btn-ask {
+.navbar {
+    padding: 0;
+}
+
+#info, .navbar, .btn-ask {
     background: #141E30;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #info, #info h1 {
     padding: 100px 20px;
-    line-height: 200%;
     font-weight: normal;
 }
 
@@ -116,6 +120,10 @@ p, .btn-ask {
 ul, nav ul, .footer ul {
 	list-style: none;
 	list-style-image: none;
+}
+
+#mainNavbar ul {
+    text-align: right;
 }
 
 ul {
@@ -189,7 +197,7 @@ ul {
     height: 150px;
 }
 
-button {
+#askbtn {
     background-color: rgb(43, 36, 117);
     border: none;
     color: #FFF;
@@ -271,7 +279,7 @@ a {
 	text-decoration: none !important;
 	color: #afafaf;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 2rem;
+    font-size: 1rem;
 	-webkit-transition: background-color 1s;
     -moz-transition:    background-color 1s;
     -ms-transition:     background-color 1s;
@@ -281,45 +289,4 @@ a {
 
 a:hover {
 	color: #f5f5f5;
-}
-
-/* Responsive Design Rules */
-
-@media only screen and (max-width: 600px) {
-    #info, #info h1 {
-    padding: 40px 10px;
-    }
-
-	#info h1 {
-	    font-size: 2rem;
-	}
-
-  .portfolio-content > div {
-    height: 100px;
-  }
-
-  .element:hover .inner {
-    top: 0px;
-  }
-
-  .element img {
-    float: left;
-  }
-
-  .inner h3, .inner p {
-    font-size: 1rem;
-  }
-
-	.footer {
-		display: block;
-		padding: 1rem;
-	}
-
-	.footer .fab {
-	    font-size: 1.5rem;
-	}
-
-	.footer li {
-	    padding: 0 2px;
-	}
 }

@@ -1,0 +1,59 @@
+/* Responsive Design Rules */
+
+@include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  }
+
+
+@media only screen and (max-width: 600px) {
+    #info, #info h1 {
+    padding: 40px 10px;
+    }
+
+	#info h1 {
+	    font-size: 2rem;
+	}
+
+  .portfolio-content > div {
+    height: 100px;
+  }
+
+  .element:hover .inner {
+    top: 0px;
+  }
+
+  .element img {
+    float: left;
+  }
+
+  .inner h3, .inner p {
+    font-size: 1rem;
+  }
+
+	.footer {
+		display: block;
+		padding: 1rem;
+	}
+
+	.footer .fab {
+	    font-size: 1.5rem;
+	}
+
+	.footer li {
+	    padding: 0 2px;
+	}
+}
