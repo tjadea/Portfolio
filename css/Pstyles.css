@@ -62,11 +62,11 @@ a:hover, .navbar-inverse .navbar-nav > li > a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 1rem;
+  padding: 1rrem;
   width: 100%;
   text-align: center;
   background-color: #222;
-  font-size: 1rem;
+  font-size: 1rrem;
   color: #FFF;
 }
 

@@ -2,20 +2,40 @@
  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:300,300i');
 
 /* Global rules */
- html {
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+html {
 	height: 100%;
 	box-sizing: border-box;
+}
+
+button, input, select, textarea {
+    font-family : "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size   : 100%;
+    width: 150px;
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+  }
+
+input[type=text]:focus {
+    border: 2px solid #555;
+}
+
+input {
+    background: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #ddd), color-stop(100%, #fff));
+    background: -moz-linear-gradient(top, #ddd, #fff);
 }
 
 img {
   max-height: 100%;
   max-width: 100%;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
 }
 
 body {
@@ -30,27 +50,33 @@ body {
 h1 {
     color: #FFF;
     font-family: 'Raleway', sans-serif;
-    font-size: 3em;
-    margin: 0;
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 h2 {
-	color: #9d9d9d;
+	color: #000;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 2em;
-	margin: 1em 0;
+	font-size: 2rem;
+    margin: 1em 0;
+    font-weight: 600;
 }
 
 p, .btn-ask {
     color: #000;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 /* Container rules */
 
 .container-fluid {
     padding: 0 0;
+    margin: 0 0;
+}
+
+#skills {
+    overflow: hidden;
 }
 
 /* Navigation rules */
@@ -63,7 +89,7 @@ p, .btn-ask {
 
 .navbar-default .navbar-nav>li>a {
     color: #d8dbe0;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -79,20 +105,28 @@ p, .btn-ask {
 #info, #info h1 {
     padding: 100px 20px;
     line-height: 200%;
+    font-weight: normal;
 }
 
 #info .fa-arrow-down {
     color: #FFF;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
-.btn-ask {
-    border-radius: 4px;
-    color: #FFF;
-}
-nav ul, .footer ul {
+ul, nav ul, .footer ul {
 	list-style: none;
 	list-style-image: none;
+}
+
+ul {
+    text-align: left;
+}
+
+/* About Rules */
+
+.skillsinfo {
+    width: 50%;
+    float: left;
 }
 
 /* Portfolio Rules */
@@ -136,7 +170,7 @@ nav ul, .footer ul {
 
 .inner h3, .inner p {
   color: #f5f5f5;
-  font-size: 1em;
+  font-size: 1rem;
   text-shadow:
  -1px -1px 0 #4e4e4e,
   1px -1px 0 #4e4e4e,
@@ -145,30 +179,71 @@ nav ul, .footer ul {
 }
 
 .element:hover .inner {
-  top: 200px;
+  top: 110px;
+}
+
+/* Contact Rules */
+
+.emsg {
+    width: 300px;
+    height: 150px;
+}
+
+button {
+    background-color: rgb(43, 36, 117);
+    border: none;
+    color: #FFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 500ms;
+    -moz-transition: background-color 500ms;
+    -o-transition: background-color 500ms;
+    box-shadow: 3px 4px #000;
+}
+
+button:hover {
+    background-color: rgb(46, 45, 58);
 }
 
 /* Footer rules */
 
 .footer {
 	left: 0;
-	right: 0;
 	bottom: 0;
-	padding-top: 4rem;
+	margin-top: 4rrem;
 	width: 100%;
 	text-align: center;
-	font-size: 1em;
-	color: #FFF;
+	font-size: 0.8rem;
+    color: #000;
 }
 
-.footer p {
+.footer > p {
+    padding: 15px;
+    margin: 0 0;
+}
+
+.footer a, .footer a:hover, .footer p {
     font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-size: 1rem;
 }
 
-.footer li {
-	display: inline;
-	padding: 0 25px;
+#sitemap li {
+    text-align: left;
 }
+
+.social-footer {
+    text-align: center
+}
+
+.social-footer li {
+	display: inline-block;
+    padding: 0 25px;
+}
+
 .footer .fab {
 	color: #555;
     -webkit-transition: color 1s;
@@ -176,10 +251,17 @@ nav ul, .footer ul {
     -ms-transition:     color 1s;
     -o-transition:      color 1s;
     transition:         color 1s;
+    padding: 5px 5px;
 }
 
 .footer .fab:hover {
 	color: #FFF;
+}
+
+.links {
+    max-width: 100%;
+    width: 30%;
+    display: inline-block;
 }
 
 /* Anchor Rules */
@@ -209,7 +291,7 @@ a:hover {
     }
 
 	#info h1 {
-	    font-size: 2em;
+	    font-size: 2rem;
 	}
 
   .portfolio-content > div {
@@ -225,16 +307,16 @@ a:hover {
   }
 
   .inner h3, .inner p {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
 	.footer {
 		display: block;
-		padding: 1em;
+		padding: 1rem;
 	}
 
 	.footer .fab {
-	    font-size: 1.5em;
+	    font-size: 1.5rem;
 	}
 
 	.footer li {
