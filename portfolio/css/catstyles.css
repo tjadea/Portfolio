@@ -33,6 +33,14 @@ p {
 
 /* Carousel */
 
+#carouselContainer, #catCarousel, .carousel-inner img {
+    height: 550px;
+}
+
+.carousel-inner img {
+    width: 40%;
+}
+
 #carouselContainer {
     background: #ffffff;
     /* Old browsers */
@@ -184,5 +192,13 @@ p {
     .carousel-indicators li,
     .carousel-indicators .active {
         visibility: hidden;
+    }
+
+    #carouselContainer, #catCarousel, .carousel-inner img {
+        height: 500px;
+    }
+
+    .carousel-inner img {
+        width: 100%;
     }
 }
