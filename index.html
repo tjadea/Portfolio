@@ -11,28 +11,37 @@
     <title>Tamara Argent | Portfolio</title>
     <script src="js/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/font-awesome/css/fontawesome-all.min.css">
     <!-- Bootstrap 4 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-						<span class="sr-only">Toggle navigation</span>
-					</button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="navbarTogglerDemo01"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#portfolio-content">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#details">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#email-me">Contact</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio-content">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#details">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#email-me">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -42,19 +51,19 @@
         <section id="info">
             <h1>Hi, I'm Tamara
                 <br>I am a Junior Front End Web Developer based in Haverhill, Suffolk</h1>
-            <br><i class="fas fa-arrow-down"></i>
+            <br>
+            <i class="fas fa-arrow-down"></i>
         </section>
     </div>
     <div class="container-fluid">
         <section id="details">
-            <h2>About Me</h2><br>
-            <p>I have a graduate background in Computer Security and Forensics and with previous experience in the Education sector, I am now branching out to another love of mine - Website Development!</p>
-            <p>I have casually tweaked and coded on and off for several years, but over the last year I have aspired to pursue a career in something I have always enjoyed.</p>
-            <p>I am always adapting and learning an array of new technologies and frameworks. If you view my skillset below you will have a taster of the frameworks and languages I have looked into as well as my current challenges and aspirations for the
-                future.
-            </p>
-            <p>I am learning in a Linux (Mint) environment and have side personal projects available on my Github.</p>
-            <p>I am currently migrating to Bootstrap 4 and learning SASS.</p>
+            <h2>About Me</h2>
+            <br>
+            <p>I have a graduate background in Computer Security and Forensics and with previous experience in the Education
+                sector, I am now branching out to another love of mine - Website Development.</p>
+            <p>I am always adapting and learning an array of new technologies and frameworks. The skillset list below details 
+                some of the frameworks and languages I have looked into as well as my current challenges and aspirations for the future.</p>
+            <p>I am learning in a Linux (Mint) environment and also have side projects available on my Github.</p>
         </section>
         <section id="skills">
             <h2>Skills</h2>
@@ -65,11 +74,12 @@
                     <li>CSS</li>
                     <li>Frameworks</li>
                     <ul>
-                        <li>Bootstrap 3</li>
+                        <li>Bootstrap 3/4</li>
                     </ul>
                     <li>Javascript</li>
                     <ul>
                         <li>jQuery</li>
+                        <li>**Vue.js or React** (Future challenge)</li>
                     </ul>
                     <li>Performance Optimisation</li>
                 </ul>
@@ -82,36 +92,46 @@
                     <li>Visual Studio Code</li>
                 </ul>
             </div>
-            <div class="skillsinfo">
-
-            </div>
+            <div class="skillsinfo">            </div>
         </section>
         <!-- Wrapper div -->
         <div class="container-fluid">
-            <h2>Recent Works</h2>
-            <p>This section comprises my recent works and a snippet of my future projects.</p>
-            <p>My next project involves the usage of Vue.js.</p>
-            <!-- Portfolio Section -->
             <section class="portfolio-content" id="portfolio-content">
-                <div class="element">
-                    <img src="imgs/photos.png">
-                    <div class="inner">
-                        <a href="portfolio/photography.html">
-                            <h3>Photography - Simple Layout</h3>
-                            <p>HTML, CSS, Bootstrap and a touch of JS</p>
-                        </a>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Recent Works</h2>
+                        <p>This section comprises my recent works and a snippet of my future projects.</p>
+                        <p>My next project involves the usage of Vue.js.</p>
                     </div>
                 </div>
-                <div class="element">
-                    <img src="imgs/catwine.png">
-                    <div class="inner">
-                        <a href="portfolio/catwine.html">
-                            <br>
-                            <h3>Cat Wine</h3>
-                            <p>A layout comprising HTML, CSS, JQuery and Bootstrap 4</p>
-                        </a>
+                <!-- Portfolio Section -->
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="element">
+                            <img src="imgs/photos.png">
+                            <div class="inner">
+                                <a href="portfolio/photography.html">
+                                    <br>
+                                    <h3>Photography - Simple Layout</h3>
+                                    <p>HTML, CSS, Bootstrap and a touch of JS</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="col-sm-6 col-lg-4">
+                    <div class="element">
+                        <img src="imgs/catwine.png">
+                        <div class="inner">
+                            <a href="portfolio/catwine.html">
+                                <br>
+                                <h3>Cat Wine</h3>
+                                <p>A layout comprising HTML, CSS, JQuery and Bootstrap 4</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </div>
             </section>
         </div>
     </div>
@@ -123,12 +143,17 @@
 
             <div class="form">
                 <form action="mailto:tjargent@outlook.com" method="post" enctype="text/plain">
-                    Name:<br>
-                    <input type="text" name="name"><br> E-mail:
+                    Name:
                     <br>
-                    <input type="text" name="mail"><br> Comment:
+                    <input type="text" name="name">
+                    <br> E-mail:
                     <br>
-                    <input type="text" name="message" class="emsg"><br><br>
+                    <input type="text" name="mail">
+                    <br> Comment:
+                    <br>
+                    <input type="text" name="message" class="emsg">
+                    <br>
+                    <br>
                     <button id="askbtn" type="submit">SEND</button>
                 </form>
             </div>
@@ -141,14 +166,20 @@
         <div class="links">
             <nav id="sitemap">
                 <ul class="col-sm">
-                    <li class="nav-item"><strong>Home</strong></li>
-                    <li class="nav-item"><strong>Portfolio Projects</strong></li>
+                    <li class="nav-item">
+                        <strong>Home</strong>
+                    </li>
+                    <li class="nav-item">
+                        <strong>Portfolio Projects</strong>
+                    </li>
                     <ul>
                         <li class="nav-item">Photography Project</li>
                         <li class="nav-item">Cat Wine Project</li>
                         <li class="nav-item">Rock, Paper, Scissors (JS) Project</li>
                     </ul>
-                    <li class="nav-item"><strong>Contact</strong></li>
+                    <li class="nav-item">
+                        <strong>Contact</strong>
+                    </li>
                     <ul>
                         <li class="nav-item">Contact me on LinkedIn</li>
                         <li class="nav-item">Email me</li>
@@ -157,14 +188,23 @@
             </nav>
         </div>
         <ul class="container-fluid social-footer">
-            <li><a href="https://codepen.io/tjadea/" target="_blank"><i class="fab fa-codepen fa-4x"></i>
-				<span class="sr-only">View my Codepen creations</span></a>
+            <li>
+                <a href="https://codepen.io/tjadea/" target="_blank">
+                    <i class="fab fa-codepen fa-4x"></i>
+                    <span class="sr-only">View my Codepen creations</span>
+                </a>
             </li>
-            <li><a href="https://github.com/tjadea" target="_blank"><i class="fab fa-git fa-4x"></i>
-				<span class="sr-only">View my current and former works</span></a>
+            <li>
+                <a href="https://github.com/tjadea" target="_blank">
+                    <i class="fab fa-git fa-4x"></i>
+                    <span class="sr-only">View my current and former works</span>
+                </a>
             </li>
-            <li><a href="https://www.linkedin.com/in/tamarajargent/" target="_blank"><i class="fab fa-linkedin fa-4x"></i>
-				<span class="sr-only">View my LinkedIn profile</span></a>
+            <li>
+                <a href="https://www.linkedin.com/in/tamarajargent/" target="_blank">
+                    <i class="fab fa-linkedin fa-4x"></i>
+                    <span class="sr-only">View my LinkedIn profile</span>
+                </a>
             </li>
         </ul>
         <p>Copyright &copy; 2017 - 2018 Tamara Argent</p>
@@ -182,13 +222,51 @@
         gtag('config', 'UA-109155057-1');
     </script>
     <script async>
-        setInterval(function() {
+        setInterval(function () {
             $('.fa-arrow-down').animate({
                 opacity: 1
             }, 1000).animate({
                 opacity: 0
             }, 1000);
         }, 2000);
+    </script>
+    <!-- Smooth scrolling script from https://css-tricks.com/snippets/jquery/smooth-scrolling/-->
+    <script>
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000, function () {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
     </script>
 </body>
 

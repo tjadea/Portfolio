@@ -1,49 +1,26 @@
 /* Import URLs for Google fonts */
- @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:300,300i');
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:300,300i');
 /* Global rules */
+
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
-  margin: 0;
+    box-sizing: inherit;
+    margin: 0;
 }
 
 html {
-	height: 100%;
+    height: 100%;
     box-sizing: border-box;
     font-size: 1rem;
-}
-
-button, input, select, textarea {
-    font-family : "Open Sans", sans-serif;
-    font-weight: 600;
-    font-size   : 100%;
-    width: 150px;
-    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
-    box-sizing: border-box;
-  }
-
-input[type=text]:focus {
-    border: 2px solid #555;
-}
-
-input {
-    background: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #ddd), color-stop(100%, #fff));
-    background: -moz-linear-gradient(top, #ddd, #fff);
-}
-
-img {
-  max-height: 100%;
-  max-width: 100%;
 }
 
 body {
     position: relative;
     margin: auto;
-	height: 100%;
-	width: 100%;
+    height: 100%;
+    width: 100%;
     background: #FFF;
     text-align: center;
 }
@@ -56,17 +33,55 @@ h1 {
 }
 
 h2 {
-	color: #000;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 2rem;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
     margin: 1em 0;
     font-weight: 600;
 }
 
-p, .btn-ask {
+p,
+.btn-ask {
     color: #000;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
+}
+
+/* Section and image rules */
+
+section {
+    padding-top: 40px;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Form / Input rules */
+
+button,
+input,
+select,
+textarea {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 100%;
+    width: 150px;
+    -webkit-box-sizing: border-box;
+    /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box;
+    /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    border: 2px solid #555;
+}
+
+input {
+    background: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #ddd), color-stop(100%, #fff));
+    background: -moz-linear-gradient(top, #ddd, #fff);
 }
 
 /* Container rules */
@@ -82,44 +97,34 @@ p, .btn-ask {
 
 /* Navigation rules */
 
-.bg-dark{
+/* Main Navbar */
+
+.bg-dark {
     border-color: transparent;
     margin-bottom: 0 !important;
     font-weight: bold;
 }
 
-#mainNavbar ul > li > a {
+.navbar {
+    background: #000;
+    padding: 0;
+}
+
+#mainNavbar ul>li>a {
     color: #d8dbe0;
     font-size: 1rem;
 }
 
-#mainNavbar ul > li > a:hover {
+#mainNavbar ul>li>a:hover {
     background-color: rgba(0, 0, 0, 0.31);
     color: #f1eaea;
 }
 
-.navbar {
-    padding: 0;
-}
-
-#info, .navbar, .btn-ask {
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-#info, #info h1 {
-    padding: 100px 20px;
-    font-weight: normal;
-}
-
-#info .fa-arrow-down {
-    color: #FFF;
-    font-size: 3rem;
-}
-
-ul, nav ul, .footer ul {
-	list-style: none;
-	list-style-image: none;
+ul,
+nav ul,
+.footer ul {
+    list-style: none;
+    list-style-image: none;
 }
 
 #mainNavbar ul {
@@ -128,6 +133,23 @@ ul, nav ul, .footer ul {
 
 ul {
     text-align: left;
+}
+
+/* Information section rules */
+
+#info {
+    background-image: linear-gradient(to right bottom, #475873, #244957, #163737, #13241c, #0c1100);
+}
+
+#info,
+#info h1 {
+    padding: 100px 20px;
+    font-weight: normal;
+}
+
+#info .fa-arrow-down {
+    color: #FFF;
+    font-size: 3rem;
 }
 
 /* About Rules */
@@ -140,54 +162,45 @@ ul {
 /* Portfolio Rules */
 
 .portfolio-content {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: row wrap;
     padding: 2px;
-    position: relative;
 }
 
-.portfolio-content > div {
-    height: 300px;
-    width: 500px;
+.portfolio-content div.element {
+    max-height: 300px;
+    max-width: 500px;
     margin: 10px;
-    flex-direction: row;
     border: 1px solid black;
 }
 
 .element {
-  overflow: hidden;
-  position: relative;
-  background-color: #E8E8E8;
+    overflow: hidden;
+    position: relative;
+    background-color: #E8E8E8;
 }
 
 .inner {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1;
-  top: 200%;
-  -webkit-transition: all 500ms;
-  -moz-transition:    all 500ms;
-  -ms-transition:     all 500ms;
-  -o-transition:      all 500ms;
-  transition:         all 500ms;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    top: 200%;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
 }
 
-.inner h3, .inner p {
-  color: #f5f5f5;
-  font-size: 1rem;
-  text-shadow:
- -1px -1px 0 #4e4e4e,
-  1px -1px 0 #4e4e4e,
-  -1px 1px 0 #4e4e4e,
-   1px 1px 0 #4e4e4e;
+.inner h3,
+.inner p {
+    color: #f5f5f5;
+    font-size: 1rem;
+    text-shadow: -1px -1px 0 #4e4e4e, 1px -1px 0 #4e4e4e, -1px 1px 0 #4e4e4e, 1px 1px 0 #4e4e4e;
 }
 
 .element:hover .inner {
-  top: 110px;
+    top: 110px;
 }
 
 /* Contact Rules */
@@ -219,21 +232,23 @@ button:hover {
 /* Footer rules */
 
 .footer {
-	left: 0;
-	bottom: 0;
-	margin-top: 4rrem;
-	width: 100%;
-	text-align: center;
-	font-size: 0.8rem;
+    left: 0;
+    bottom: 0;
+    margin-top: 4rrem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
     color: #000;
 }
 
-.footer > p {
+.footer>p {
     padding: 15px;
     margin: 0 0;
 }
 
-.footer a, .footer a:hover, .footer p {
+.footer a,
+.footer a:hover,
+.footer p {
     font-family: 'Open Sans', sans-serif;
     color: #000;
     font-size: 1rem;
@@ -248,22 +263,22 @@ button:hover {
 }
 
 .social-footer li {
-	display: inline-block;
+    display: inline-block;
     padding: 0 25px;
 }
 
 .footer .fab {
-	color: #555;
+    color: #555;
     -webkit-transition: color 1s;
-    -moz-transition:    color 1s;
-    -ms-transition:     color 1s;
-    -o-transition:      color 1s;
-    transition:         color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
     padding: 5px 5px;
 }
 
 .footer .fab:hover {
-	color: #FFF;
+    color: #FFF;
 }
 
 .links {
@@ -275,18 +290,18 @@ button:hover {
 /* Anchor Rules */
 
 a {
-	font-style: normal;
-	text-decoration: none !important;
-	color: #afafaf;
-	font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    text-decoration: none !important;
+    color: #afafaf;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-	-webkit-transition: background-color 1s;
-    -moz-transition:    background-color 1s;
-    -ms-transition:     background-color 1s;
-    -o-transition:      background-color 1s;
-    transition:         background-color 1s;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
 }
 
 a:hover {
-	color: #f5f5f5;
+    color: #f5f5f5;
 }
