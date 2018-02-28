@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300i,400,900i');
+html,
+body {
+    margin: 0 auto;
+    color: #5F464B;
+    font-family: 'Lato', sans-serif
+}
+
+h1,
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+a,
+p {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0;
+}
+
+
+/* Navbar */
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.bg-pink,
+#footer {
+    background-color: #f3e1e2;
+}
+
+
+/* Carousel */
+
+#carouselContainer {
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ffffff 0%, #f9f9f9 47%, #f7f7f7 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ffffff 0%, #f9f9f9 47%, #f7f7f7 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 47%, #f7f7f7 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: #000000;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: #000000;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #000000;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    background-color: #FFFFFF;
+}
+
+
+/* Cards */
+
+.card-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.card-body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    background-color: #ffdede;
+    margin: 0.5rem 0.5rem;
+    float: none;
+    padding: 0.5rem 0.5rem;
+}
+
+.card:hover {
+    background-color: #fde7e7;
+    -webkit-transition: background-color 500ms ease-out;
+    -moz-transition: background-color 500ms ease-out;
+    -o-transition: background-color 500ms ease-out;
+    transition: background-color 500ms ease-out;
+}
+
+
+/* Container and Buttons */
+
+.container-fluid {
+    background-color: #f5d1d4;
+    text-align: center;
+}
+
+.btn-order {
+    background-color: #f98396;
+    color: #FFF;
+}
+
+.btn-wishlist {
+    background-color: #ce9d9d;
+    color: #FFF;
+}
+
+.btn-wishlist:hover {
+    background-color: #a77e7e;
+}
+
+.btn-order:hover {
+    background-color: #e66c80;
+}
+
+
+/* Floating DIV alert */
+
+#addedWishlist,
+#removedWishlist {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 25%;
+    right: 25%;
+    z-index: 1031;
+}
+
+
+/* Footer */
+
+#footer,
+#footer p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+/* Media queries for devices below 768px */
+
+@media (min-width: 320px) and (max-width: 560px) {
+    #footer,
+    #footer p {
+        font-size: 10px;
+    }
+    .carousel-indicators li,
+    .carousel-indicators .active {
+        visibility: hidden;
+    }
+}
