@@ -30,9 +30,9 @@
 					</button>
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio-content">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#details">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#email-me">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,6 +43,95 @@
             <h1>Hi, I'm Tamara
                 <br>I am a Junior Front End Web Developer based in Haverhill, Suffolk</h1>
             <br><i class="fas fa-arrow-down"></i>
+        </section>
+    </div>
+    <div class="container-fluid">
+        <section id="details">
+            <h2>About Me</h2><br>
+            <p>I have a graduate background in Computer Security and Forensics and with previous experience in the Education sector, I am now branching out to another love of mine - Website Development!</p>
+            <p>I have casually tweaked and coded on and off for several years, but over the last year I have aspired to pursue a career in something I have always enjoyed.</p>
+            <p>I am always adapting and learning an array of new technologies and frameworks. If you view my skillset below you will have a taster of the frameworks and languages I have looked into as well as my current challenges and aspirations for the
+                future.
+            </p>
+            <p>I am learning in a Linux (Mint) environment and have side personal projects available on my Github.</p>
+            <p>I am currently migrating to Bootstrap 4 and learning SASS.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skillsinfo">
+                <h3>Front-End Web Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Frameworks</li>
+                    <ul>
+                        <li>Bootstrap 3</li>
+                    </ul>
+                    <li>Javascript</li>
+                    <ul>
+                        <li>jQuery</li>
+                    </ul>
+                    <li>Performance Optimisation</li>
+                </ul>
+            </div>
+            <div class="skillsinfo">
+                <h3>Development Environments and Software</h3>
+                <ul>
+                    <li>Github</li>
+                    <li>Linux</li>
+                    <li>Visual Studio Code</li>
+                </ul>
+            </div>
+            <div class="skillsinfo">
+
+            </div>
+        </section>
+        <!-- Wrapper div -->
+        <div class="container-fluid">
+            <h2>Recent Works</h2>
+            <p>This section comprises my recent works and a snippet of my future projects.</p>
+            <p>My next project involves the usage of Vue.js.</p>
+            <!-- Portfolio Section -->
+            <section class="portfolio-content" id="portfolio-content">
+                <div class="element">
+                    <img src="imgs/photos.png">
+                    <div class="inner">
+                        <a href="portfolio/photography.html">
+                            <h3>Photography - Simple Layout</h3>
+                            <p>HTML, CSS, Bootstrap and a touch of JS</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="imgs/catwine.png">
+                    <div class="inner">
+                        <a href="portfolio/catwine.html">
+                            <br>
+                            <h3>Cat Wine</h3>
+                            <p>A layout comprising HTML, CSS, JQuery and Bootstrap 4</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!-- Contact 'email-me' section -->
+        <section id="email-me">
+            <h3>Send me a message</h3>
+            <p>If you want to shoot me a message then please fill in the form below or contact me through LinkedIn.</p>
+
+            <div class="form">
+                <form action="mailto:tjargent@outlook.com" method="post" enctype="text/plain">
+                    Name:<br>
+                    <input type="text" name="name"><br> E-mail:
+                    <br>
+                    <input type="text" name="mail"><br> Comment:
+                    <br>
+                    <input type="text" name="message" class="emsg"><br><br>
+                    <button id="askbtn" type="submit">SEND</button>
+                </form>
+            </div>
         </section>
     </div>
     <!-- footer -->
