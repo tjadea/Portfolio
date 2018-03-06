@@ -39,44 +39,56 @@
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <!-- #mainNavbar contents -->
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link">About me</a></li>
-                        <li class="nav-item"><a class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio-content">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">About me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
     </header>
-    <!-- Info section see if DIV is required-->
-    <div id="info">
-        <section>
-            <h1 class="display-2">Tamara Argent</h1>
-            <p class="display-sub">Junior Front End Web Developer</p>
-        </section>
-    </div>
+    <!-- Info section -->
+    <section id="info">
+        <h1 class="display-2">Tamara Argent</h1>
+        <p class="display-sub">Junior Front End Web Developer</p>
+    </section>
     <!-- Skills section -->
-    <div id="skills">
-        <section>
-            <ul>
-                <li></li>
-                <li></li>
+    <section id="skills">
+        <h1 class="lead">I am a 2014 Computer Security and Forensics graduate from the UK.<br><br> I am self-teaching and learning from the basics various Front End Web Development technologies and frameworks.<br> Website Design and Development has always been an interest
+            of mine and I have dabbled with HTML/CSS markup before as a hobby.<br><br> These are the technologies and software I am using in my day-to-day:</h1><br><br>
+        <div class="row">
+            <ul class="col">
+                <strong>Technologies</strong>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap 4</li>
+                    <li>JS</li>
+                </ul>
             </ul>
-        </section>
-    </div>
+            <ul class="col">
+                <strong>Software</strong>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Inkscape</li>
+                    <li>Linux Mint environment</li>
+                    <li>Git/Github</li>
+                </ul>
+            </ul>
+        </div>
+    </section>
     <!-- Portfolio section -->
     <div class="container-fluid">
         <section id="portfolio-content">
             <div class="row">
                 <div class="col-sm-12">
-                    <h2>Recent Works</h2>
-                    <p>This section comprises my recent works and a snippet of my future projects.</p>
-                    <p>My next project involves the usage of Vue.js.</p>
+                    <h2>Portfolio</h2>
                 </div>
             </div>
             <!-- Portfolio Section -->
             <div class="row">
-                <div class="col-sm-12 col-lg-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="element">
                         <div class="inner">
                             <a href="portfolio/photography.html">
@@ -87,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="element">
                         <div class="inner">
                             <a href="portfolio/catwine.html">
@@ -98,9 +110,32 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="element">
+                        <div class="inner">
+                            <a href="#">
+                                <!-- SVG RPC -->
+                                <!-- <object type="image/svg+xml" data="imgs/catwine.svg">Your browser does not support SVGs</object><br> -->
+                                <h1 class="display-2 portfolio-item">Rock, Paper, Scissors (JS)</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                    <div class="element">
+                        <div class="inner">
+                            <a href="#">
+                                <!-- SVG Landing Page -->
+                                <!-- <object type="image/svg+xml" data="imgs/catwine.svg">Your browser does not support SVGs</object><br> -->
+                                <h1 class="display-2 portfolio-item">Product Landing Page</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-    </div>
     </div>
     <!-- footer -->
     <footer id="footer">
@@ -146,7 +181,18 @@
     </footer>
 
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109155057-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109155057-1');
+    </script>
 </body>
 
 </html>

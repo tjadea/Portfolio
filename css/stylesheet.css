@@ -17,18 +17,19 @@ body {
 h1,
 h2 {
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 3rem;
 }
 
 
 /* Paragraphs */
 
 p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 .bg-custom {
-    background-color: #829191;
+    background-color: #982649;
 }
 
 
@@ -36,6 +37,7 @@ p {
 
 ul li {
     list-style-type: none;
+    padding: 0;
 }
 
 
@@ -50,7 +52,7 @@ a:hover {
 }
 
 .fab {
-    color: #555;
+    color: #982649;
     -webkit-transition: color 1s;
     -moz-transition: color 1s;
     -ms-transition: color 1s;
@@ -80,12 +82,22 @@ a:hover {
 
 #info,
 #skills,
-#portfolio-content {
+#footer {
     background-color: #C5C5C5;
+    text-align: center;
+}
+
+#portfolio-content {
+    background-color: #4F6D7A;
+    text-align: center;
 }
 
 #info {
     padding: 150px 25px;
+}
+
+#skills ul li {
+    text-align: left;
 }
 
 
@@ -94,6 +106,11 @@ a:hover {
 .container-fluid {
     width: 100%;
     padding: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #portfolio-content div.element {
@@ -114,7 +131,7 @@ a:hover {
 }
 
 a .portfolio-item {
-    color: #4F6D7A;
+    color: #FFF;
     font-weight: 700;
     font-size: 3rem;
     transition: all 0.2s linear;
