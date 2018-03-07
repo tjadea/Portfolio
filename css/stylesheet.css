@@ -1,6 +1,6 @@
 /* Google Font */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,400,600');
 
 /* Global rules */
 
@@ -32,6 +32,17 @@ p {
     background-color: #982649;
 }
 
+#mainNavbar .nav-link {
+    color: #ff6382;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #FFF;
+    border-bottom: 2px solid #FFF;
+}
+
 
 /* List Items */
 
@@ -53,11 +64,11 @@ a:hover {
 
 .fab {
     color: #982649;
-    -webkit-transition: color 1s;
-    -moz-transition: color 1s;
-    -ms-transition: color 1s;
-    -o-transition: color 1s;
-    transition: color 1s;
+    -webkit-transition: color 0.6s;
+    -moz-transition: color 0.6s;
+    -ms-transition: color 0.6s;
+    -o-transition: color 0.6s;
+    transition: color 0.6s;
     padding: 5px 5px;
 }
 
@@ -74,22 +85,30 @@ a:hover {
 
 .display-sub {
     text-align: center;
-    color: #777;
+    color: #420b0b;
 }
 
 
 /* Info */
 
-#info,
-#skills,
+#portfolio-content,
 #footer {
-    background-color: #C5C5C5;
+    background-color: #f1f1f1;
     text-align: center;
+    color: #111;
 }
 
-#portfolio-content {
-    background-color: #4F6D7A;
+#skills {
+    background-color: #982649;
     text-align: center;
+    color: #fff;
+}
+
+#info,
+#info a {
+    background-color: #BC3852;
+    text-align: center;
+    color: #fff;
 }
 
 #info {
@@ -131,14 +150,14 @@ a:hover {
 }
 
 a .portfolio-item {
-    color: #FFF;
+    color: #982649;
     font-weight: 700;
-    font-size: 3rem;
-    transition: all 0.2s linear;
+    font-size: 2.5rem;
+    transition: all 0.4s linear;
 }
 
 a:hover .portfolio-item {
-    color: #982649;
+    color: #FFF;
 }
 
 
@@ -165,14 +184,20 @@ a:hover .portfolio-item {
 
 /* Media queries */
 
-@media (min-width: 200px) and (max-width: 500px) {
-    .display-1 {
+@media (min-width: 320px) and (max-width: 500px) {
+    .display-2 {
         font-size: 2rem;
+    }
+    .lead {
+        font-size: 1.2rem;
+    }
+    .social-footer li {
+        padding: 0px 5px;
     }
 }
 
 @media (min-width: 500px) and (max-width: 800px) {
-    .display-1 {
+    .display-2 {
         font-size: 4rem;
     }
 }
