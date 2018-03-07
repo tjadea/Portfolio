@@ -23,6 +23,11 @@
 </head>
 
 <body>
+    <div style="visibility: visible;" id="loader">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+    </div>
     <header>
         <!-- start #mainNavbar -->
         <nav class="navbar navbar-expand-md navbar-dark bg-custom">
@@ -138,6 +143,15 @@
                     <li>Git/Github</li>
                 </ul>
             </ul>
+            <ul class="col">
+                <strong>Learning by:</strong>
+                <ul>
+                    <li>Jon Duckett eBooks</li>
+                    <li>Udemy</li>
+                    <li>Bootstrap Documentation</li>
+                    <li>Stackoverflow</li>
+                </ul>
+            </ul>
         </div>
     </section>
     <!-- footer -->
@@ -166,15 +180,15 @@
                 <nav id="sitemap">
                     <ul>
                         <li class="nav-item">
-                            <strong>Home</strong>
+                            <strong><a class="nav-link" href="#skills">Home</a></strong>
                         </li>
                         <li class="nav-item">
-                            <strong>Portfolio Projects</strong>
+                            <strong><a class="nav-link" href="#portfolio-content">Portfolio Projects</a></strong>
                         </li>
                         <ul>
-                            <li class="nav-item">Photography Project</li>
-                            <li class="nav-item">Cat Wine Project</li>
-                            <li class="nav-item">Rock, Paper, Scissors (JS) Project</li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio/photography.html">Photography Project</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio/catwine.html">Cat Wine Project</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Rock, Paper, Scissors (JS) Project</a></li>
                         </ul>
                     </ul>
                 </nav>
@@ -183,7 +197,28 @@
         <p>Copyright &copy; 2017 - 2018 Tamara Argent</p>
     </footer>
 
+    <script language="javascript" type="text/javascript">
+        // Declare variables for each timeout to smoothen transition
+        opacityVar = setTimeout(fadeloader, 3000);
 
+        document.getElementById("loader").style.visibility = "visible";
+        document.getElementById("loader").style.opacity = 1;
+
+        function fadeloader() {
+            document.getElementById('loader').style.transition = 'opacity 1.2s';
+            document.getElementById('loader').style.webkitTransition = 'opacity 1.2s';
+            document.getElementById("loader").style.opacity = 0;
+            // clearTimeout(opacityVar);
+        }
+
+        hideVar = setTimeout(hideloader, 4300);
+
+        function hideloader() {
+            document.getElementById("loader").style.visibility = "hidden";
+            document.getElementById("loader").style.display = "none";
+            // clearTimeout(hideVar);
+        }
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109155057-1"></script>
     <script>
