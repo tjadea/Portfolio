@@ -1,0 +1,16 @@
+<?xml-stylesheet type="text/css" href="svg.css"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" version="1.1" viewBox="0 0 294.78094 209.28275">
+ <g class="camera" transform="translate(-1.6077 -87.319)">
+  <g stroke="#000" class="camera" fill="none">
+   <g stroke-linecap="square" stroke-width="8">
+    <path d="m4.1577 89.869v202.6"/>
+    <path d="m4.1577 89.869h289.15"/>
+    <path d="m4.6869 294.05h289.15v-202.6"/>
+   </g>
+   <circle style="paint-order:normal" stroke-width="4" cy="191.96" cx="149" r="42.886"/>
+   <circle style="paint-order:normal" stroke-width="3" cy="101.94" cx="281.69" r="4.6708"/>
+   <circle style="paint-order:normal" stroke-width="3" cy="101.94" cx="269.59" r="4.6708"/>
+   <circle style="paint-order:normal" stroke-width="8" cy="191.96" cx="149" r="55.387"/>
+  </g>
+ </g>
+</svg>

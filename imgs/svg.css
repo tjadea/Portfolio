@@ -1,8 +1,19 @@
 svg {
     fill: #982649;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 svg:hover {
     fill: #FFF;
+}
+
+.camera {
+    stroke: #982649;
+    fill: transparent;
+    transition: all 0.3s ease;
+}
+
+.camera:hover { 
+    stroke: #FFF;
+    fill: transparent;
 }
