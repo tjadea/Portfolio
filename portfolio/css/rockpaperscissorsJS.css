@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+/* Global Rules */
+html, body {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-size: 1rem;
+    margin: auto;
+    background-color: #EEE;
+}
+
+label {
+    margin: 0.5rem;
+}
+
+/* Form and Output Rules */
+h1 {
+    padding: 1rem;
+}
+#form {
+    width: 700px;
+    padding: 25px;
+}
+
+#output {
+    width: 700px;
+    height: 500px;
+    border: 2px solid #111;
+    overflow: auto;
+    background-color: #FFF;
+}
+/* If I use a pre-processor I can change just the alpha property to condense irrelevant code */
+.btn-rock {
+    background-color: #222;
+    color: #FFF;
+}
+
+.btn-paper {
+    background-color: #DDD;
+    color: #000;
+}
+
+.btn-scissors {
+    background-color: #999;
+    color: #000;
+}
+/* Button Hover styling */
+.btn-rock:hover {
+    background-color: rgba(34,34,34,0.5);
+}
+
+.btn-paper:hover {
+    background-color: rgba(221,221,221,0.5);
+}
+
+.btn-scissors:hover {
+    background-color: rgba(153,153,153,0.5);
+}

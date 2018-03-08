@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Language English -->
+<html lang="en">
+
+<head>
+    <!-- Meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Junior Front End Web Developer" />
+    <meta name="keywords" content="front-end developer, junior front-end, Haverhill, Suffolk, Tamara Argent Haverhill," />
+    <meta name="author" content="Tamara Argent">
+    <title>Tamara Argent | Portfolio | 'Rock, Paper, Scissors'</title>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap 4 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/font-awesome/css/fontawesome-all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/rockpaperscissorsJS.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div style="float: none; margin: 0 auto;">
+                <h1>'Rock, Paper, Scissors' Javascript Game</h1>
+                <form id="form">
+                    <label for="rounds">Number of Rounds:</label>
+                    <input type="number" id="rounds">
+                    <br>
+                    <label for="options">Player Choice:</label>
+                    <!-- Currently cannot verify onSubmit for HTML5 input validation due to page refresh, using prevent default but may rewrite to allow for required rounds popup -->
+                    <button class="btn btn-rock options" type="button" onClick="choose('Rock')">
+                        <i class="far fa-hand-rock"></i> Rock</button>
+                    <button class="btn btn-paper options" type="button" onClick="choose('Paper')">
+                        <i class="far fa-hand-paper"></i> Paper</button>
+                    <button class="btn btn-scissors options" type="button" onClick="choose('Scissors')">
+                        <i class="far fa-hand-scissors"></i> Scissors</button>
+
+                    <!-- Rock Paper Scissors Scripts -->
+                    <script type="text/javascript" src="js/playRound.js"></script>
+                    <script type="text/javascript" src="js/choose.js"></script>
+                </form>
+                <div id="output"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109155057-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109155057-1');
+    </script>
+</body>
+
+</html>
