@@ -1,6 +1,6 @@
     /* Google Font */
     
-    @import url('https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,400,600');
+    @import url('../fonts/fonts.css');
     /* Page Loader */
     
     #loader {
