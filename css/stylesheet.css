@@ -154,7 +154,7 @@
 
         
     #info, #skills, #portfolio-content {
-        padding: 250px 25px;
+        padding: 150px 5px;
     }
     
     #info,
@@ -208,12 +208,45 @@
     a .portfolio-item {
         color: #982649;
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 1rem;
         transition: all 0.4s linear;
     }
     
     a:hover .portfolio-item {
         color: #FFF;
+    }
+
+    .btn-html, .btn-css, .btn-js, .btn-bootstrap {
+        font-weight: 600;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .btn-static {
+        border: 1px solid #666;
+        border-radius: .25rem;
+        cursor: default;
+      }
+      .btn-static:active {
+        -moz-box-shadow:    inset 0 0 0px white;
+        -webkit-box-shadow: inset 0 0 0px white;
+        box-shadow:         inset 0 0 0px white;
+      }
+
+    .btn-html {
+        background-color: rgb(255, 165, 0);
+    }
+
+    .btn-css {
+        background-color: rgb(125, 125, 255);
+    }
+
+    .btn-js {
+        background-color: rgb(245, 245, 170);
+    }
+
+    .btn-bootstrap {
+        background-color: rgb(180, 125, 180);
     }
 
     /* Social Footer */
@@ -255,7 +288,7 @@
     
     @media (min-width: 500px) {
         a .portfolio-item {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         .lead {
             font-size: 1.1rem;
